@@ -1,107 +1,133 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Login</title>
-	</head>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Login</title>
+   </head>
+   <body>
+	   
+      <div class = "wrapper">
+         <!--<div class = "header">
+            </div>-->
+		  
+         <div class = "nav">
+            <div class="hamburger-menu">
+               <input id="menu__toggle" type="checkbox" />
+               <label class="menu__btn" for="menu__toggle">
+               <span></span>
+               </label>
+               <ul class="menu__box">
+                  <li><a class="menu__item" href="home.html">Home</a></li>
+                  <li><a class="menu__item" href="library.html">Library</a></li>
+                  <li><a class="menu__item" href="login.html">Login</a></li>
+               </ul>
+            </div>
+			 
+            <center>
+               <p>navigation bar/burger nav</p>
+            </center>
+			 
+         </div>
+		  
+         <!--Content Boxes-->
+         <div class="contact_content">
+			 
+			 <div class="row">
+					  
+                     <div class="column">
+                     </div>
+					  
+						 <div class="column2">
 
-	<body>
-		
-		<div class = "wrapper">
-			
-			<!--<div class = "header">
+							<center>
+							   <p>login box</p>
+							</center>
 
-			</div>-->
-			
-			<div class = "nav">
-				<div class="hamburger-menu">
-					<input id="menu__toggle" type="checkbox" />
-					<label class="menu__btn" for="menu__toggle">
-					  <span></span>
-					</label>
+							<br><br>
+							<center>
+							   <p>please enter your login details:</p>
+							</center>
 
-					<ul class="menu__box">
-					  <li><a class="menu__item" href="home.html">Home</a></li>
-					  <li><a class="menu__item" href="library.html">Library</a></li>
-					  <li><a class="menu__item" href="login.html">Login</a></li>
-					</ul>
-				</div>
+						 </div>
+					  
+                  </div>
+			 
+            <?php
+               //Get the connection to the database in phpMyAdmin
+               require_once("");
+               ?>
+            <br>
+			 
+            <!--Form-->
 				
-				<center><p>navigation bar/burger nav</p></center>
+               <form action = "connect.php" method="post">
+				   
+                  <!--Name Field-->
+				   
+                  <div class="row">
+					  
+                     <div class="column">
+                     </div>
+					  
+                     <div class="column2">
+						 
+                        <input type="text" id="username" name="username" placeholder="Username...">
+						 
+                     </div>
+					  
+                  </div>
+				   
+                  <!--Email Field-->
+                  <div class="row">
+					  
+                     <div class="column">	
+                     </div>
+					  
+                     <div class="column2">
+						 
+                        <input type="text" id="password" name="password" placeholder="Password...">
+						 
+                     </div>
+					  
+                  </div>
+				   
+                  <!--Submit Button-->
+				   <div class="row">
+					  
+                     <div class="column">	
+                     </div>
+					  
+                     <div class="column2">
+					  
+						<center>
+							<input type="submit" value="submit">
+						</center>
+					  
+                  	</div>
+					  
+                  </div>
 
-			</div>
-			
-			<!--Content Boxes-->
-			<div class = "content_1">
+               </form>
 				
-				<center><p>login box</p></center><br><br>
+               <br><br><br>
+			 
+               <center>
+                  <p>don't have a login? create one here...</p>
+               </center>
 				
-				<center><p>please enter your login details:</p></center>
-			
-			<?php
-			//Get the connection to the database in phpMyAdmin
-			require_once("");
-			?>
-				<br>
-			
-			
-			<!--Form-->
-			<div class="contact_container">
-				<form action = "connect.php" method="post">
-
-				<!--Name Field-->
-
-					<div class="row">
-
-						<div class="column">
-						</div>
-						
-
-						<div class="column2">
-
-							<input type="text" id="username" name="username" placeholder="Username...">
-
-						</div>
-
-					</div>
-
-					<!--Email Field-->
-
-					<div class="row">
-
-						<div class="column">				
-						</div>
-						
-
-						<div class="column2">
-
-							<input type="text" id="password" name="password" placeholder="Password...">
-
-						</div>
-
-					</div>
-
-					<!--Submit Button-->
-					
-					<div class="column2">
-
-						<input type="submit" value="submit">
-
-					</div>
-
-				</form>
-				
-				<br><br><br><br><br><br><br><center><p>don't have a login? create one here...</p></center>
-
-			</div>
-				
-			
-			</div>
-
-		</div>	
-	</body>
-
+         </div>
+		  
+		  <div class = "footer">
+			 
+            <center>
+               <p>footer</p>
+            </center>
+			 
+         </div>
+		  
+      </div>
+   </body>
 </html>
