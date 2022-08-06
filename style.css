@@ -291,10 +291,11 @@ input[type=submit]:hover{
 	box-sizing: border-box;
 	background-color: green;
 	margin-top: 3.5vw;
+	margin-left: 12vw;
 	padding-left: 2vw;
 	height: 40vw;
 	border-radius: 5px;
-	grid-column: 6;
+	grid-column: 3;
 	grid-row: 2;
 }
 
