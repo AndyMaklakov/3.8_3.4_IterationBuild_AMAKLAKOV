@@ -1,3 +1,30 @@
+<?php
+	ob_start();
+	session_start();
+		$error = NULL;
+		if($_SERVER["REQUEST_METHOD"] == "POST") {
+			//connect.php (tells me where to connect servername, database name, username & password)
+			require "91902_Database_Assessment_mysqli.php";
+			//username and password sent from form
+			$myusername = mysqli_real_escape_string($conn, $_POST['username']);
+			$mypassword = mysqli_real_escape_string($conn, $_POST['password']);
+			
+			$query = "SELECT User_ID FROM users WHERE Username = '$myusername' and Password = '$mypassword'";
+			$result = mysqli_query($conn, $query);
+			$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+			$count = mysqli_num_rows($result);
+			
+			//If result matched $myusername & $mypassword, table row must be 1 row
+			if($count == 1) {
+				$_SESSION['login_user'] = $myusername;
+				header("location: home.php");
+			} else {
+				$error = "ERROR! Your Username or Password is invalid";
+				}
+		}
+	ob_end_flush();
+?>
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -15,24 +42,27 @@
 		  
          <div class = "nav">
 			 
+			 <div class = "logo" style = float:right>
+				
+				<center>
+						
+					<p>logo</p>
+					
+				</center>
+				
+			 </div>
+			 
             <div class="hamburger-menu">
                <input id="menu__toggle" type="checkbox" />
                <label class="menu__btn" for="menu__toggle">
                <span></span>
                </label>
                <ul class="menu__box">
-                  <li><a class="menu__item" href="home.html">Home</a></li>
-                  <li><a class="menu__item" href="library.html">Library</a></li>
-                  <li><a class="menu__item" href="login.html">Login</a></li>
+                  <li><a class="menu__item" href="home.php">Home</a></li>
+                  <li><a class="menu__item" href="library.php">Library</a></li>
+                  <li><a class="menu__item" href="login.php">Login</a></li>
                </ul>
             </div>
-			 
-            <div class = "logo">
-				
-               <p>logo</p>
-				
-			 </div>
-            
 			 
          </div>
 		  
@@ -59,15 +89,11 @@
 					  
                   </div>
 			 
-            <?php
-               //Get the connection to the database in phpMyAdmin
-               require_once("");
-               ?>
             <br>
 			 
             <!--Form-->
 				
-               <form action = "connect.php" method="post">
+               <form method="post">
 				   
                   <!--Name Field-->
 				   
@@ -78,7 +104,7 @@
 					  
                      <div class="column2">
 						 
-                        <input type="text" id="username" name="username" placeholder="Username...">
+                        <input type="text" name="username" placeholder="Username...">
 						 
                      </div>
 					  
@@ -92,7 +118,7 @@
 					  
                      <div class="column2">
 						 
-                        <input type="text" id="password" name="password" placeholder="Password...">
+                        <input type="password" name="password" placeholder="Password...">
 						 
                      </div>
 					  
@@ -107,7 +133,7 @@
                      <div class="column2">
 					  
 						<center>
-							<input type="submit" value="submit">
+							<input type="submit" value="Submit">
 						</center>
 					  
                   	</div>
@@ -116,10 +142,10 @@
 
                </form>
 				
-               <br><br><br>
+               <br>
 			 
                <center>
-                  <p>don't have a login? create one here...</p>
+                  <a class="link2" href="insert_user.php">don't have a login? create one here...</a>
                </center>
 				
          </div>
