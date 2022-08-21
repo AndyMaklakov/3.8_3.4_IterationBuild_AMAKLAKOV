@@ -19,26 +19,27 @@
 	</head>
 
 	<body>
-
+	
 		<div class = "wrapper2">
-
+			
 			<!--<div class = "header">
+
 			</div>-->
-
+			
 			<div class = "nav">
-
+				
 				<div class = "logo" style = float:right>
-
+				
 					<center>
-
+						
 						<p>logo</p>
-
+					
 					</center>
-
+				
 			 	</div>
-
+				
 				<div class = "link" style = float:right>
-
+				
 					<center>
 						<a class="query_nav" href="query1.php">Query1</a>
 						<a class="query_nav" href="query2.php">Query2</a>
@@ -48,9 +49,9 @@
 							 }
 						 ?>
 					</center>
-
+					
 			 	</div>
-
+				
 				<div class="hamburger-menu">
 					<input id="menu__toggle" type="checkbox" />
 					<label class="menu__btn" for="menu__toggle">
@@ -65,12 +66,12 @@
 				</div>
 
 			</div>
-
+			
 			<!--Content Boxes-->
 			<div class = "main_content">
+				
 
-
-
+				
 				<div class = "title2">
 					<center>
 
@@ -80,7 +81,22 @@
 				</div>
 
 				<div class = "title3" style = "border-bottom: 0.1vw solid #000;">
+					
+							<?php
+								require "91902_Database_Assessment_mysqli.php";
 
+								//Creates a variable to store the sql query
+								$query = ("SELECT SEC_TO_TIME(SUM(Seconds))
+											FROM song_details
+											WHERE 1");
+
+								//Runs and stores the query using the variables $con (see nav.php) and $query
+								$result = mysqli_query($conn,$query);
+								//runs in a while 'while' loop
+								while($output=mysqli_fetch_array($result))
+								{
+							?>
+					
 							<p style = "padding-left: 21.3vw; display: inline;">#</p>
 
 							<p style = "padding-left: 2.5vw; display: inline;">TITLE</p>
@@ -93,12 +109,21 @@
 
 							<p style = "padding-left: 4.2vw; display: inline;">SEC</p>
 
-							<p style = "padding-left: 2.5vw; display: inline;">SIZE</p>	
-
+							<p style = "padding-left: 2.5vw; display: inline;">SIZE</p>
+							
+							<p style = "padding-left: 6vw; display: inline;">Total Time:</p>
+							
+							<p style = "padding-left: 0.5vw; display: inline;"><?php echo $output['SEC_TO_TIME(SUM(Seconds))']; ?></p>
+								
+							<?php
+							//Closes the output while loop
+							}
+							?>
+					
 				</div>
 
 					<div class = "content_5">
-
+							
 							<?php
 								require "91902_Database_Assessment_mysqli.php";
 
@@ -106,10 +131,13 @@
 								$query = ("SELECT s.Song_ID, s.Title, s.Seconds, s.Size, a.Album, b.Artist, c.Genre
 											FROM song_details AS s 
 											INNER JOIN album_id a ON s.Album_ID = a.Album_ID
+
 											JOIN song_to_artist d ON s.Song_ID = d.Song_ID
 											JOIN artist_id b ON b.Artist_ID = d.Artist_ID
+
 											JOIN song_to_genre e ON s.Song_ID = e.Song_ID
 											JOIN genre_id c ON c.Genre_ID = e.Genre_ID
+
 											ORDER BY s.Song_ID ASC");
 
 								//Runs and stores the query using the variables $con (see nav.php) and $query
@@ -119,7 +147,7 @@
 								{
 								?>
 								<!--php is above. HTML is below. Used to output the query result-->
-
+						
 								<div class ="test" style = "border-bottom: 0.1vw solid #000; border-left: 0.1vw solid #000; border-right: 0.1vw solid #000;">
 									<heading2>
 
@@ -140,9 +168,9 @@
 									</heading2>
 
 								</div>
-
-
-
+								
+								
+							
 								<?php
 								//Closes the output while loop
 								}
@@ -152,16 +180,16 @@
 
 
 			</div>
-
+			
 			<div class = "footer">
-
+			 
 				<center>
 				   <p>footer</p>
 				</center>
-
+				
 			</div>
-
-
+						
+			
 		</div>	
 	</body>
 
