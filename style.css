@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Oswald&family=Roboto&display=swap');
+
 html{
-	background-color: #f7f7f7;
+	background-color: #ACACDE;
 }
 
 body {
@@ -8,6 +10,7 @@ body {
  }
 
 h1 {
+	font-family: 'Oswald', sans-serif;
 	color: black;
 	font-size: 2vw;
 	letter-spacing: 0.1m; /* space between each paragraph line */
@@ -16,6 +19,7 @@ h1 {
 }
 
 p {
+	font-family: 'Roboto', sans-serif;
 	color: black;
 	font-size: 1.2vw;
 	line-height: 1.2em; /* space between each paragraph line */
@@ -40,7 +44,7 @@ p {
  
  .nav{
 	box-sizing: border-box;
-	background-color: #006D77;
+	background-color: #087E8B;
 	padding-left: 1vw;
 	padding-right: 1vw;
 	grid-column: 1 / span 6;
@@ -123,7 +127,7 @@ p {
 	position: absolute;
 	width: 100%;
 	height: 0.25vw;
-	background-color: #EDF6F9;
+	background-color: #C7DFC5;
 	transition-duration: .30s;
 }
 
@@ -147,7 +151,7 @@ p {
 	margin: 0;
 	padding: 6vw 0;
 	list-style: none;
-	background-color: #006D77;
+	background-color: #087E8B;
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, .4);
 	transition-duration: .30s;
 }
@@ -155,7 +159,7 @@ p {
 .menu__item {
 	display: block;
 	padding: 1vw 2vw;
-	color: #EDF6F9;
+	color: #C7DFC5;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5vw;
 	font-weight: 600;
@@ -164,7 +168,7 @@ p {
 }
 
 .menu__item:hover {
-	background-color: #4B4E4E;
+	background-color: #2D2E2E;
 }
 
  /*-----------------------------------------------*/
@@ -224,7 +228,7 @@ p {
 	grid-column: 1 / span 6;
 	grid-row: 2;
 	display: grid;
-	background: #EDF6F9;
+	background: #ACACDE;
 	grid-template-rows: 13vw 20vw;
 	grid-template-columns: 14.5vw 20vw 5vw 20vw 5vw 20vw 5vw;
 }
@@ -248,7 +252,7 @@ p {
 }
 
 .title2{
-	background-color: #83C5BE;
+	background-color: #C7DFC5;
 	padding-top: 2vw;
 	font-size: 4vw;
 	grid-column: 1 / span 8;
@@ -256,7 +260,7 @@ p {
 }
 
 .title3{
-	background-color: #83C5BE;
+	background-color: #C7DFC5;
 	font-size: 1.2vw;
 	height: 1.5vw;
 	grid-column: 1 / span 8;
@@ -293,7 +297,7 @@ p {
 .footer{
 	grid-column: 1 / span 6;
 	grid-row: 3;
-	background: #4B4E4E;
+	background: #2D2E2E;
 }
 
 /*---------------CONTACT FORM --------------*/
@@ -333,7 +337,7 @@ input[type=submit]:hover{
 
 .contact_content{
 	box-sizing: border-box;
-	background-color: #83C5BE;
+	background-color: #C7DFC5;
 	margin-top: 3.5vw;
 	margin-left: 12vw;
 	padding-left: 2vw;
