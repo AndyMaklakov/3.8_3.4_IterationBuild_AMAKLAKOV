@@ -43,6 +43,11 @@
 					<center>
 						<a class="query_nav" href="query1.php">Query1</a>
 						<a class="query_nav" href="query2.php">Query2</a>
+						<?php
+							 if ($_SESSION['login_user'] == "graeme" or $_SESSION['login_user'] == "Graeme"){
+								 echo '<a class="query_nav" href="insert_user.php">Settings</a>';
+							 }
+						 ?>
 					</center>
 					
 			 	</div>
@@ -69,15 +74,28 @@
 				
 				<div class = "title2">
 
-						<b>
-	
-							<h1>song_id title seconds</h1> <h1>album artist size</h1>
-
-					   </b>
+						<center>
+							<h1>header</h1>
+						</center>
 						
 				</div>
 
 				<div class = "title3" style = "border-bottom: 0.1vw solid #000;">
+					
+							<?php
+								require "91902_Database_Assessment_mysqli.php";
+
+								//Creates a variable to store the sql query
+								$query = ("SELECT SEC_TO_TIME(SUM(Seconds))
+											FROM song_details
+											WHERE 1");
+
+								//Runs and stores the query using the variables $con (see nav.php) and $query
+								$result = mysqli_query($conn,$query);
+								//runs in a while 'while' loop
+								while($output=mysqli_fetch_array($result))
+								{
+							?>
 					
 							<p style = "padding-left: 21.3vw; display: inline;">#</p>
 
@@ -92,6 +110,15 @@
 							<p style = "padding-left: 4.2vw; display: inline;">SEC</p>
 
 							<p style = "padding-left: 2.5vw; display: inline;">SIZE</p>
+							
+							<p style = "padding-left: 6vw; display: inline;">Total Time:</p>
+							
+							<p style = "padding-left: 0.5vw; display: inline;"><?php echo $output['SEC_TO_TIME(SUM(Seconds))']; ?></p>
+								
+							<?php
+							//Closes the output while loop
+							}
+							?>
 					
 				</div>
 
