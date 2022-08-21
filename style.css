@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Oswald&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Oswald&family=Poppins&family=Roboto&display=swap');
 
 html{
 	background-color: #ACACDE;
@@ -10,7 +10,7 @@ body {
  }
 
 h1 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Arvo', serif;
 	color: black;
 	font-size: 2vw;
 	letter-spacing: 0.1m; /* space between each paragraph line */
@@ -19,7 +19,7 @@ h1 {
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: black;
 	font-size: 1.2vw;
 	line-height: 1.2em; /* space between each paragraph line */
