@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Oswald&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Oswald&family=Poppins&family=Roboto&display=swap'); /*The link that allows the fonts to used on in my css*/
 
 html{
-	background-color: #ACACDE;
+	background-color: #EDF6F9;
 }
 
 body {
@@ -10,16 +10,15 @@ body {
  }
 
 h1 {
-	font-family: 'Arvo', serif;
+	font-family: 'Oswald', serif;
 	color: black;
-	font-size: 2vw;
-	letter-spacing: 0.1m; /* space between each paragraph line */
-	word-spacing: 5vw;
+	font-size: 2.2vw;
+	letter-spacing: 0.03em; /* space between each paragraph line */
 	padding-left: 10px;
 }
 
 p {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: black;
 	font-size: 1.2vw;
 	line-height: 1.2em; /* space between each paragraph line */
@@ -29,29 +28,29 @@ p {
 .wrapper{
 	height: 80vh;
 	display: grid;
-	grid-template-rows: 4vw 49vw 12vw 12vw;
-	grid-template-columns: auto;
+	grid-template-rows: 4vw 49vw 12vw 12vw;	/*Navigation bar, Main content area, Footer*/
+	grid-template-columns: auto; /*Auto as it's doesn't need to be configured here*/
  }
 
 .wrapper2{
 	height: 80vh;
 	display: grid;
-	grid-template-rows: 4vw 58vw 12vw;
-	grid-template-columns: auto;
+	grid-template-rows: 4vw 49vw 12vw; /*Navigation bar, Main content area, Footer*/
+	grid-template-columns: auto; /*Auto as it's doesn't need to be configured here*/
  }
 
  /*----------------NAV/BURGER NAV---------------------*/
  
- .nav{
+ .nav{	/*Navigation bar that contains paddding for elements on it and Navigation bar width*/
 	box-sizing: border-box;
-	background-color: #087E8B;
+	background-color: #006D77;
 	padding-left: 1vw;
 	padding-right: 1vw;
 	grid-column: 1 / span 6;
 	grid-row: 1;
 }
 
-.logo{
+.logo{	/*Box for the logo on the navigation bar*/
 	margin-right: 3vw;
 	text-align: right;
 	font-size: 5vw;
@@ -59,35 +58,58 @@ p {
 	background-color:;
 }
 
-.link{
-	word-spacing: 2vw;
-	margin-top: 1.2vw;
-	margin-right: 10vw;
-	text-align: right;
-	width: 16vw;
-	color: black;
-}
-
-.link2{
-	color: black;	
-}
-
-.query_nav{
+.query_nav{	/*Style for the query links and settings link that also contains some of the hover elements*/
 	display: inline;
 	font-size: 1.2vw;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	
+	/*Hover element*/
+	background-image: linear-gradient(
+    to left,
+    #000,
+    #000 50%,
+    #EDF6F9 50%
+  	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; /*Makes the link text a solid colour*/
+	transition: all 0.2s ease-in-out; /*Animation for the hover*/
 }
 
-.admin_nav{
+/*Hover elements*/
+.query_nav:before {
+	content: '';
+	background: ;
+	display: inline;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 3px;
+}
+
+.query_nav:hover {
+	background-position: 0;
+}
+
+.query_nav:hover::before {
+	width: 100%;
+}
+
+.admin_nav{	/*Box for the query links only the admin 'Graeme' can see.*/
 	display: inline;
 	font-size: 1.2vw;
 	margin-top: 1.2vw;
 	margin-right: 4vw;
 	text-align: right;
-	width: 22vw;
-	color: black;
+	width: 25vw;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
+/*Burger Nav elements*/
 #menu__toggle {
 	opacity: 0;
 }
@@ -110,7 +132,7 @@ p {
 	left: 0 !important;
 }
 
-.menu__btn {
+.menu__btn {	/*Style for the 'burger icon' position */
 	position: absolute;
 	top: 2vw;
 	left: 1vw;
@@ -120,46 +142,46 @@ p {
 	z-index: 3;
 }
 
-.menu__btn > span,
+.menu__btn > span,	/*Style for the animation of the 'burger icon'*/
 .menu__btn > span::before,
 .menu__btn > span::after {
 	display: block;
 	position: absolute;
 	width: 100%;
 	height: 0.25vw;
-	background-color: #C7DFC5;
+	background-color: #EDF6F9;
 	transition-duration: .30s;
 }
 
-.menu__btn > span::before {
+.menu__btn > span::before { /*Same as above*/
 	content: '';
 	top: -8px;
 }
 
-.menu__btn > span::after {
+.menu__btn > span::after { /*Same as above*/
 	content: '';
 	top: 8px;
 }
 
-.menu__box {
+.menu__box {	/*The box where the main links are. Appears when 'burger icon' is clicked*/
 	display: block;
 	position: absolute;
 	top: 0;
 	left: -100%;
 	width: 13vw;
-	height: 53vw;
+	height: 41vw;
 	margin: 0;
 	padding: 6vw 0;
 	list-style: none;
-	background-color: #087E8B;
+	background-color: #006D77;
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, .4);
 	transition-duration: .30s;
 }
 
-.menu__item {
+.menu__item {	/*Style for the menu items*/
 	display: block;
 	padding: 1vw 2vw;
-	color: #C7DFC5;
+	color: #EDF6F9;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5vw;
 	font-weight: 600;
@@ -167,29 +189,11 @@ p {
 	transition-duration: .30s;
 }
 
-.menu__item:hover {
+.menu__item:hover { /*Simple hover for the menu items*/
 	background-color: #2D2E2E;
 }
+/*-----------------------------------------------------*/
 
- /*-----------------------------------------------*/
- 
-.header{
-	box-sizing: border-box;
-	background-color: blue;
-	padding-left: 1vw;
-	padding-right: 1vw;
-	grid-column: 1 / span 6;
-	grid-row: 1;
-	
-}
-
-.responsive {
-	width: 100%;
-	/*max-width: auto;*/
-	height: 250px;
-	object-fit: cover;
-	object-position: bottom;
-}
 
 /*--------------Scrollbar------------*/
 
@@ -213,37 +217,24 @@ p {
 	background: #555;
 }
 
-/*-----------Image----------------*/
+/*-----------Images/Graphics----------------*/
 
-.img {
-	margin:10px;
-	float: right;
-	top: 10px;
-	right: 10px;
+.img { /*Will use later for images/graphics stage*/
+	
 }
 
 /*-------------Content Boxes----------------*/
 
-.main_content{
+.main_content{	/*Large elements are stored here*/
 	grid-column: 1 / span 6;
 	grid-row: 2;
 	display: grid;
-	background: #ACACDE;
-	grid-template-rows: 13vw 20vw;
-	grid-template-columns: 14.5vw 20vw 5vw 20vw 5vw 20vw 5vw;
+	background: #EDF6F9;
+	grid-template-rows: 13vw 20vw; /*Title3, Content_5*/
+	grid-template-columns: 14.5vw 20vw 5vw 20vw 5vw 20vw 5vw; /*#, TITLE, ARTIST, ALBUM, GENRE, SEC, SIZE*/
 }
 
-.sub_content{
-	grid-column: 1 / span 3;
-	grid-row: 1;
-	background: blue;
-	display: grid;
-	grid-template-rows: 13vw 20vw;
-	grid-template-columns: 14.5vw 20vw 5vw 20vw 5vw 20vw 5vw;
-	z-index: 2;
-}
-
-.title1{
+.title1{ /*Box for the heading and sub heading*/
 	background-color:;
 	padding-top: 0vw;
 	font-size: 4vw;
@@ -251,23 +242,23 @@ p {
 	grid-row: 1;
 }
 
-.title2{
-	background-color: #C7DFC5;
+.title2{	/*Box that is the background for the heading/sub heading*/
+	background-color: #83C5BE;
 	padding-top: 2vw;
 	font-size: 4vw;
 	grid-column: 1 / span 8;
 	grid-row: 1;
 }
 
-.title3{
-	background-color: #C7DFC5;
+.title3{	/*Box for the titles (#, TITLE, ARTIST... etc)*/
+	background-color: #83C5BE;
 	font-size: 1.2vw;
 	height: 1.5vw;
 	grid-column: 1 / span 8;
 	grid-row: 2;
 }
 
-.content_2{
+.content_2{	/*Image box on the left of home page*/
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	background: rgba(204, 204, 204, 0.7);
@@ -276,7 +267,12 @@ p {
 	grid-row: 2;
 }
 
-.content_3{
+.content_2:hover{	/*Hover for the image box*/
+	transition:transform 0.3s ease-out;
+
+}
+
+.content_3{	/*Image box on the centre of home page*/
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	background: rgba(204, 204, 204, 0.7);
@@ -285,7 +281,7 @@ p {
 	grid-row: 2;
 }
 
-.content_4{
+.content_4{	/*Image box on the right of home page*/
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	background: rgba(204, 204, 204, 0.7);
@@ -294,36 +290,36 @@ p {
 	grid-row: 2;
 }
 
-.footer{
+.footer{	/*Footer at the bottom of all the pages*/
 	grid-column: 1 / span 6;
 	grid-row: 3;
-	background: #2D2E2E;
+	background: #4B4E4E;
 }
 
 /*---------------CONTACT FORM --------------*/
 
-input[type=text], select, textarea{
+input[type=text], select, textarea{	/*Input boxes where users can enter text*/
 	width: 100%;
-	height: 30px;
-	padding: 12px;
-	border: 1px solid #ccc;
+	height: 2vw;
+	padding: 0.8vw;
+	border: 0.1vw solid #ccc;
 	border-radius: 4px;
 	resize: vertical;
 }
 
-input[type=password], select, textarea{
+input[type=password], select, textarea{	/*Input boxes where users can enter text but text is hidden*/
 	width: 100%;
-	height: 30px;
-	padding: 12px;
-	border: 1px solid #ccc;
+	height: 2vw;
+	padding: 0.8vw;
+	border: 0.1vw solid #ccc;
 	border-radius: 4px;
 	resize: vertical;
 }
 
-input[type=submit]{
+input[type=submit]{	/*Style for button*/
 	background-color: #6cd45f;
 	color: black;
-	padding: 22px 40px;
+	padding: 1.5vw 2.5vw;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -331,13 +327,13 @@ input[type=submit]{
 	margin-right: 6vw;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover{	/*Hover for button*/
 	background-color: #81f772;
 }
 
-.contact_content{
+.contact_content{	/*Box where all login/insert/delete/update user content is stored */
 	box-sizing: border-box;
-	background-color: #C7DFC5;
+	background-color: #83C5BE;
 	margin-top: 3.5vw;
 	margin-left: 12vw;
 	padding-left: 2vw;
@@ -347,19 +343,19 @@ input[type=submit]:hover{
 	grid-row: 2;
 }
 
-.column{
+.column{	/*Column for positioning elements*/
 	float: left;
-	width: 15%;
+	width: 10%;
 	margin-top: 100px;
 }
 
-.column2{
+.column2{	/*Another column for positioning elements*/
 	float: left;
 	width: 20vw;
 	margin-top: 40px;
 }
 
-/* clear floats after the columns */
+/*Clears floats after the columns*/
 .row:after{
 	content:"";
 	display: table;
@@ -368,16 +364,16 @@ input[type=submit]:hover{
 
 /*-------Library Content ----------*/
 
-::-webkit-scrollbar {
+::-webkit-scrollbar {	/*hides scroll bar from pages*/
 	width: 0;
 	background: transparent;		
 }
 
-.content_5{
+.content_5{	/*Where the query1 & query2 output is placed on the page*/
 	box-sizing: border-box;
 	margin: -18.4vw 6vw 0vw;
 	width: 80%;
-	height: 43.4vw;
+	height: 34.4vw;
 	z-index: 2;
 	overflow: scroll;
 	overflow-x: hidden;
@@ -385,42 +381,17 @@ input[type=submit]:hover{
 	grid-row: 3;
 }
 
-content{
-	z-index: 2;	
-	overflow: auto;	
-	overflow-x: auto;
-}
-
-heading1, heading2{
+heading2{	/*Positioning of query outputs*/
 	width: 85%;
 	display: grid;
     grid-gap: 2%;
-	grid-template-columns: 5% 30% 15% 25% 15% 8% 10%;
+	grid-template-columns: 5% 30% 15% 25% 15% 8% 10%; /*#, TITLE, ARTIST, ALBUM, GENRE, SEC, SIZE*/
     grid-template-rows: 50px;
 	margin-bottom: 2vw;
 	padding-bottom: 1vw;
 	z-index: 5;
 }
 
-.test:hover {
+.test:hover { /*Hover for query results*/
   background-color: #D5DEE0;
 }
-
-/*div {
-height:100px;width:100px;
-background:blue;
-margin:20px;
-}
-
-span {
-display:none;
-height:100px;width:100px;
-background:pink;
-margin:20px;
-}
-
-div:hover ~ span {
-display:block;
-}
-<div>text 1</div>
-<span>text 2</span>*/
