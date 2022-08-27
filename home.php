@@ -35,10 +35,10 @@
 				
 			 </div>
 			 
-			 <div class = "link" style = float:right>
+			 <div class = "admin_nav" style = float:right>
 				 <?php
 				 if ($_SESSION['login_user'] == "graeme" or $_SESSION['login_user'] == "Graeme"){
-					 echo '<a class="query_nav" href="insert_user.php">Settings</a>';
+					 echo '<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="insert_user.php">Settings</a>';
 				 }
 				 ?>
 			 </div>
@@ -102,13 +102,14 @@
 			 
          </div>
 		  
-         <div class = "footer">
+         <div class = "footer" style = "padding-left:3vw;">
 			 
-            <center>
-               <p>footer</p>
-            </center>
+				<h1>More Information:</h1>
+				<p>Created by: Andrew Maklakov, June - August, 2022<br>
+				Copyright ©: 2022, Andrew Maklakov, Tawa College<br>
+				Admin: Graeme - Contact Graeme for inserting, deleting or updating a user</p>
 			 
-         </div>
+		</div>
       </div>
    </body>
 </html>
