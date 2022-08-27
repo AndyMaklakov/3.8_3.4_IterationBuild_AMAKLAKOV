@@ -38,14 +38,14 @@
 				
 			 	</div>
 				
-				<div class = "link" style = float:right>
+				<div class = "admin_nav" style = float:right>
 				
 					<center>
-						<a class="query_nav" href="query1.php">Query1</a>
-						<a class="query_nav" href="query2.php">Query2</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="query1.php">Query1</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="query2.php">Query2</a>
 						<?php
 							 if ($_SESSION['login_user'] == "graeme" or $_SESSION['login_user'] == "Graeme"){
-								 echo '<a class="query_nav" href="insert_user.php">Settings</a>';
+								 echo '<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="insert_user.php">Settings</a>';
 							 }
 						 ?>
 					</center>
@@ -75,7 +75,8 @@
 				<div class = "title2">
 
 						<center>
-							<h1>header</h1>
+							<h1>Query1</h1>
+							<p>Graeme's playlist: sorted by title, artist DESC</p>
 						</center>
 						
 				</div>
@@ -182,11 +183,12 @@
 
 			</div>
 			
-			<div class = "footer">
+			<div class = "footer" style = "padding-left:3vw;">
 			 
-				<center>
-				   <p>footer</p>
-				</center>
+				<h1>More Information:</h1>
+				<p>Created by: Andrew Maklakov, June - August, 2022<br>
+				Copyright ©: 2022, Andrew Maklakov, Tawa College<br>
+				Admin: Graeme - Contact Graeme for inserting, deleting or updating a user</p>
 				
 			</div>
 						
