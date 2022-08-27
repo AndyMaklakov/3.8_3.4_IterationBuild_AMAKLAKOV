@@ -75,8 +75,8 @@
                      </div>
 					  
 						 <div class="column2">
-
-							<center>
+							
+							<center><br><br><br>
 							   <p>login box</p>
 							</center>
 
@@ -141,22 +141,17 @@
                   </div>
 
                </form>
-				
-               <br>
 			 
-               <center>
-                  <a class="link2" href="insert_user.php">don't have a login? create one here...</a>
-               </center>
-				
          </div>
 		  
-		  <div class = "footer">
+			<div class = "footer" style = "padding-left:3vw;">
 			 
-            <center>
-               <p>footer</p>
-            </center>
-			 
-         </div>
+				<h1>More Information:</h1>
+				<p>Created by: Andrew Maklakov, June - August, 2022<br>
+				Copyright ©: 2022, Andrew Maklakov, Tawa College<br>
+				Admin: Graeme - Contact Graeme for inserting, deleting or updating a user</p>
+				
+			</div>
 		  
       </div>
    </body>
