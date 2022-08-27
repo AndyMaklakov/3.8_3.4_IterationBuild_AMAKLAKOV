@@ -35,12 +35,12 @@
 				
 			 	</div>
 				
-				<div class = "admin_nav" style = float:right>
+				<div class = "admin_nav" style = float:right;>
 				
 					<center>
-						<a style = padding-right:1vw; href="insert_user.php">Insert User</a>
-						<a style = padding-right:1vw; href="delete_user.php">Delete User</a>
-						<a style = padding-right:1vw; href="update_user.php">Update User</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="insert_user.php">Insert User</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="delete_user.php">Delete User</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="update_user.php">Update User</a>
 					</center>
 					
 			 	</div>
@@ -69,7 +69,7 @@
 					  
 						 <div class="column2">
 
-							<center>
+							<center><br><br><br>
 							   <p>Insert User</p>
 							</center>
 
@@ -80,7 +80,7 @@
 
 						 </div>
 					  
-                  </div>
+               </div>
 			 
             <!--Form-->
 				
@@ -135,7 +135,7 @@
 			 	<?php
 					//connect.php (tells where to connect servername, username, password, dbaseName)
 					require "91902_Database_Assessment_mysqli.php";
-					print "<center><p>Connected to server</p></center>";
+					print "<br><p style = padding-left:8vw;>Connected to server</p>";
 			 		
 			 		if(isset($_Post['submit']));
 						{
@@ -148,24 +148,25 @@
 
 						if (mysqli_query($conn,$insertquery))
 							{
-							echo "<center><p>Record inserted:</p></center>";
+							echo "<p style = padding-left:9vw;>Record inserted:</p>";
 							}
 						else
 							{
-							echo "<center><p>Error inserting record:</p></center>";
+							echo "";
 							}
 						}
 				?>
 				
-         	</div>
-		  
-		  <div class = "footer">
-			 
-            <center>
-               <p>footer</p>
-            </center>
-			 
          </div>
+		  
+		  <div class = "footer" style = "padding-left:3vw;">
+			 
+				<h1>More Information:</h1>
+				<p>Created by: Andrew Maklakov, June - August, 2022<br>
+				Copyright ©: 2022, Andrew Maklakov, Tawa College<br>
+				Admin: Graeme - Contact Graeme for inserting, deleting or updating a user</p>
+				
+			</div>
 		  
       </div>
    </body>
