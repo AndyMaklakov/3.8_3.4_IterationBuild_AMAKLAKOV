@@ -35,12 +35,12 @@
 				
 			 	</div>
 				
-				<div class = "admin_nav" style = float:right>
+				<div class = "admin_nav" style = float:right;>
 				
 					<center>
-						<a style = padding-right:1vw; href="insert_user.php">Insert User</a>
-						<a style = padding-right:1vw; href="delete_user.php">Delete User</a>
-						<a style = padding-right:1vw; href="update_user.php">Update User</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="insert_user.php">Insert User</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="delete_user.php">Delete User</a>
+						<a class="query_nav" style = padding-right:1vw;color:#EDF6F9; href="update_user.php">Update User</a>
 					</center>
 					
 			 	</div>
@@ -69,7 +69,7 @@
 					  
 						 <div class="column2">
 
-							<center>
+							<center><br><br><br>
 							   <p>Update User</p>
 							</center>
 
@@ -134,7 +134,7 @@
                </form>
 			 	<?php
 					require "91902_Database_Assessment_mysqli.php";
-					print "<center><p class = 'grey'>Connected to server</p></center>";
+					print "<p style = padding-left:8vw;>Connected to server</p>";
 
 					$ExistingUserID = isset($_POST["ExistingUsername"]) ? $_POST['ExistingUsername']: ''; 
 					$NewUserID = isset($_POST["NewUsername"]) ? $_POST['NewUsername']: ''; 
@@ -143,23 +143,24 @@
 					$updatequery = "UPDATE users SET Username = '$NewUserID' WHERE Username = '$ExistingUserID'";
 					if (mysqli_query($conn,$updatequery))
 					{
-					echo "<center><h3>Record updated</h3></center>";
+					echo "<p style = padding-left:9vw;>Record updated:</p>";
 					}
 					else
 					{
-					echo "<center><h3>Error updatinging record:</h3></center>";
+					echo "";
 					}
 				?>		
 				
          	</div>
 		  
-		  <div class = "footer">
+		  <div class = "footer" style = "padding-left:3vw;">
 			 
-            <center>
-               <p>footer</p>
-            </center>
-			 
-         </div>
+				<h1>More Information:</h1>
+				<p>Created by: Andrew Maklakov, June - August, 2022<br>
+				Copyright ©: 2022, Andrew Maklakov, Tawa College<br>
+				Admin: Graeme - Contact Graeme for inserting, deleting or updating a user</p>
+				
+			</div>
 		  
       </div>
    </body>
