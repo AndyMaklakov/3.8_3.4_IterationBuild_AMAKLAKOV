@@ -6,7 +6,6 @@ html{
 
 body {
 	margin: 0px;
-
  }
 
 h1 {
@@ -54,7 +53,9 @@ p {
 	margin-right: 3vw;
 	text-align: right;
 	font-size: 5vw;
-	width: 5vw;
+	float: right;
+	width: 4vw;
+	height: 4vw;
 	background-color:;
 }
 
@@ -192,8 +193,6 @@ p {
 .menu__item:hover { /*Simple hover for the menu items*/
 	background-color: #2D2E2E;
 }
-/*-----------------------------------------------------*/
-
 
 /*--------------Scrollbar------------*/
 
@@ -220,7 +219,8 @@ p {
 /*-----------Images/Graphics----------------*/
 
 .img { /*Will use later for images/graphics stage*/
-	
+	width: 100%;
+ 	height: auto;
 }
 
 /*-------------Content Boxes----------------*/
@@ -229,17 +229,18 @@ p {
 	grid-column: 1 / span 6;
 	grid-row: 2;
 	display: grid;
-	background: #EDF6F9;
+	background: #141416;
 	grid-template-rows: 13vw 20vw; /*Title3, Content_5*/
 	grid-template-columns: 14.5vw 20vw 5vw 20vw 5vw 20vw 5vw; /*#, TITLE, ARTIST, ALBUM, GENRE, SEC, SIZE*/
 }
 
 .title1{ /*Box for the heading and sub heading*/
 	background-color:;
-	padding-top: 0vw;
+	padding-top: 3vw;
 	font-size: 4vw;
 	grid-column: 1 / span 8;
 	grid-row: 1;
+	z-index: 6;
 }
 
 .title2{	/*Box that is the background for the heading/sub heading*/
@@ -248,10 +249,11 @@ p {
 	font-size: 4vw;
 	grid-column: 1 / span 8;
 	grid-row: 1;
+	height: 12.6vw;
 }
 
 .title3{	/*Box for the titles (#, TITLE, ARTIST... etc)*/
-	background-color: #83C5BE;
+	background-color:;
 	font-size: 1.2vw;
 	height: 1.5vw;
 	grid-column: 1 / span 8;
@@ -385,7 +387,7 @@ heading2{	/*Positioning of query outputs*/
 	width: 85%;
 	display: grid;
     grid-gap: 2%;
-	grid-template-columns: 5% 30% 15% 25% 15% 8% 10%; /*#, TITLE, ARTIST, ALBUM, GENRE, SEC, SIZE*/
+	grid-template-columns: 5% 30% 15% 25% 14% 8% 10%; /*#, TITLE, ARTIST, ALBUM, GENRE, SEC, SIZE*/
     grid-template-rows: 50px;
 	margin-bottom: 2vw;
 	padding-bottom: 1vw;
@@ -393,5 +395,5 @@ heading2{	/*Positioning of query outputs*/
 }
 
 .test:hover { /*Hover for query results*/
-  background-color: #D5DEE0;
+  background-color: #444444;
 }
