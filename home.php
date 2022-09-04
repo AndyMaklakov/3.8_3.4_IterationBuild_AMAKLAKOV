@@ -15,6 +15,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="css/style.css">
+	  <link rel="icon" type="image/x-icon" href="/images/sigma_favicon.ico">
       <title>Home</title>
    </head>
    <body>
@@ -25,14 +26,7 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = float:right>
-				
-				<center>
-						
-					<p>logo</p>
-					
-				</center>
-				
+			 <div class = "logo" style = "background-image: url('images/sigmalogowhite.jpg'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogowhite">
 			 </div>
 			 
 			 <div class = "admin_nav" style = float:right>
@@ -56,10 +50,9 @@
             </div>
  
          </div>
-         <div class = "main_content">
-            
+         <div class = "main_content" style = "background-image: url('images/homepagebackground1.jpg'); background-size: 100vw 50vw; background-position: 0vw" alt="homepagebackground1">
+			 
 			 <div class = "title1">
-               <br>
 				 <b>
                   <center>
 					  <h1>Welcome</h1>
@@ -76,27 +69,21 @@
 			 
             <!--Content Boxes-->
 			 
-            <div class = "content_2">
+            <div class = "content_2" style = "overflow: hidden; transition: 0.5s;">
 				
-               <center>
-                  <p>image box 1</p>
-               </center>
+               <a href = "query1.php"><img src="images/imagebox1_image1.jpg" alt="imagebox1_image1" class="img" style=border-radius:5px;></a>
 				
             </div>
 			 
             <div class = "content_3">
 				
-               <center>
-                  <p>image box 2</p>
-               </center>
+               <a href = "library.php"><img src="images/imagebox2_image1.jpg" alt="imagebox1_image2" class="img" style=border-radius:5px;></a>
 				
             </div>
 			 
             <div class = "content_4">
 				
-               <center>
-                  <p>image box 3</p>
-               </center>
+               <a href = "query2.php"><img src="images/imagebox3_image1.jpg" alt="imagebox1_image3" class="img" style=border-radius:5px;></a>
 				
             </div>
 			 
