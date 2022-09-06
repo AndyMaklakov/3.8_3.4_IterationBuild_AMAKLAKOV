@@ -15,7 +15,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="css/style.css">
-	  <link rel="icon" type="image/x-icon" href="/images/sigma_favicon.ico">
+	  <link rel="icon" type="image/x-icon" href="/images2/sigma_favicon.png">
       <title>Home</title>
    </head>
    <body>
@@ -26,7 +26,7 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = "background-image: url('images/sigmalogowhite.jpg'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogowhite">
+			 <div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
 			 </div>
 			 
 			 <div class = "admin_nav" style = float:right>
@@ -50,40 +50,36 @@
             </div>
  
          </div>
-         <div class = "main_content" style = "background-image: url('images/homepagebackground1.jpg'); background-size: 100vw 50vw; background-position: 0vw" alt="homepagebackground1">
+         <div class = "main_content" style = "background-image: url('images2/homepagebackground3.jpg'); background-size: 100vw 50vw; background-position: 0vw" alt="homepagebackground3">
 			 
 			 <div class = "title1">
-				 <b>
-                  <center>
-					  <h1>Welcome</h1>
-                  </center>
+				<b>
+					  <h1 style = "color: white; padding-left: 45.5vw;">Welcome</h1>
                </b>
 				 
-				<b>
-                  <center>
-                     <p>See new releases here</p>
-                  </center>
+				<b> 
+                     <p style = "color: white; padding-left: 42vw;">See Graeme's playlists here:</p>
                </b>
 				 
             </div>
 			 
             <!--Content Boxes-->
 			 
-            <div class = "content_2" style = "overflow: hidden; transition: 0.5s;">
+            <div class = "content_2">
 				
-               <a href = "query1.php"><img src="images/imagebox1_image1.jpg" alt="imagebox1_image1" class="img" style=border-radius:5px;></a>
+               <a href = "query1.php"><img src="images2/imagebox1_image2.jpg" alt="imagebox1_image1" class="img" style=border-radius:5px;></a>
 				
             </div>
 			 
             <div class = "content_3">
 				
-               <a href = "library.php"><img src="images/imagebox2_image1.jpg" alt="imagebox1_image2" class="img" style=border-radius:5px;></a>
+               <a href = "library.php"><img src="images2/imagebox2_image1.jpg" alt="imagebox1_image2" class="img" style=border-radius:5px;></a>
 				
             </div>
 			 
             <div class = "content_4">
 				
-               <a href = "query2.php"><img src="images/imagebox3_image1.jpg" alt="imagebox1_image3" class="img" style=border-radius:5px;></a>
+               <a href = "query2.php"><img src="images2/imagebox2_image2.jpg" alt="imagebox1_image3" class="img" style=border-radius:5px;></a>
 				
             </div>
 			 
