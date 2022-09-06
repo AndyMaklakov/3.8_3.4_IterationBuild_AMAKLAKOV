@@ -29,7 +29,7 @@
 			
 			<div class = "nav">
 				
-				<div class = "logo" style = "background-image: url('images/sigmalogowhite.jpg'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogowhite">
+				<div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
 			 	</div>
 				
 				<div class = "admin_nav" style = float:right>
@@ -66,7 +66,7 @@
 				
 
 				
-				<div class = "title2" style = "background-image: url('images/query2bannerimage1.jpg'); background-position: 0vw;" alt="query2bannerimage1">
+				<div class = "title2" style = "background-image: url('images2/query2bannerimage1.jpg'); background-size: 100vw; 48.614vw; background-position: 0vw;" alt="query2bannerimage1">
 					<center>
 
 							<h1 style = "color: white;">Query2</h1>
