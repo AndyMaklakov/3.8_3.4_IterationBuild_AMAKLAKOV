@@ -9,7 +9,7 @@
 ?>
 
 <!DOCTYPE html>
-<html style = "background-image: url('images/insert-delete-update_image1.jpg'); background-position: 0vw; background-size: 100vw; 50vw;" alt=" insert-delete-update_image1">
+<html style = "background-image: url('images2/insert-delete-update_image1.jpg'); background-position: 0vw; background-size: 100vw; 50vw;" alt=" insert-delete-update_image1">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = "background-image: url('images/sigmalogowhite.jpg'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogowhite">
+			 <div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
 			 </div>
 				
 				<div class = "admin_nav" style = float:right;>
@@ -63,8 +63,7 @@
 					  
 						 <div class="column2">
 
-							<br><br><br>
-							   <img src="images/delete-icon2.jpg" alt="delete-icon" class="img" style="padding-left:9vw;width:2.6vw;height:2.6vw;">
+							<img src="images/delete-icon.jpg" alt="delete-icon" class="img" style="padding-left:7.5vw;width:6vw;height:6vw;">
 
 							<br><br>
 							<center>
