@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="icon" type="image/x-icon" href="/images/sigma_favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/images2/sigma_favicon.ico">
 		<title>Library</title>
 	</head>
 
@@ -29,7 +29,7 @@
 			
 			<div class = "nav">
 				
-				<div class = "logo" style = "background-image: url('images/sigmalogowhite.jpg'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogowhite">
+				<div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
 			 	</div>
 				
 				<div class = "admin_nav" style = float:right>
@@ -65,7 +65,7 @@
 			<div class = "main_content">
 				
 
-				<div class = "title2" style = "background-image: url('images/librarybannerimage1.jpg'); background-size: 100vw 48.614vw; background-position: 0vw;" alt="librarybannerimage1">
+				<div class = "title2" style = "background-image: url('images2/librarybannerimage2.jpg'); background-size: 100vw 48.614vw; background-position: 0vw;" alt="librarybannerimage1">
 					<center>
 
 							<h1>Library</h1>
@@ -89,23 +89,23 @@
 									{
 								?>
 
-								<p style = "padding-left: 21.3vw; display: inline;">#</p>
+								<p style = "color: white; padding-left: 21.3vw; display: inline;">#</p>
 
-								<p style = "padding-left: 2.5vw; display: inline;">TITLE</p>
+								<p style = "color: white; padding-left: 2.5vw; display: inline;">TITLE</p>
 
-								<p style = "padding-left: 12.8vw; display: inline;">ARTIST</p>
+								<p style = "color: white; padding-left: 12.8vw; display: inline;">ARTIST</p>
 
-								<p style = "padding-left: 4vw; display: inline;">ALBUM</p>
+								<p style = "color: white; padding-left: 4vw; display: inline;">ALBUM</p>
 
-								<p style = "padding-left: 9.3vw; display: inline;">GENRE</p>
+								<p style = "color: white; padding-left: 9.3vw; display: inline;">GENRE</p>
 
-								<p style = "padding-left: 4.2vw; display: inline;">SEC</p>
+								<p style = "color: white; padding-left: 4.2vw; display: inline;">SEC</p>
 
-								<p style = "padding-left: 2.5vw; display: inline;">SIZE</p>
+								<p style = "color: white; padding-left: 2.5vw; display: inline;">SIZE</p>
 
-								<p style = "padding-left: 6vw; display: inline;">Total Time:</p>
+								<p style = "color: white; padding-left: 6vw; display: inline;">Total Time:</p>
 
-								<p style = "padding-left: 0.5vw; display: inline;"><?php echo $output['SEC_TO_TIME(SUM(Seconds))']; ?></p>
+								<p style = "color: white; padding-left: 0.5vw; display: inline;"><?php echo $output['SEC_TO_TIME(SUM(Seconds))']; ?></p>
 
 								<?php
 								//Closes the output while loop
