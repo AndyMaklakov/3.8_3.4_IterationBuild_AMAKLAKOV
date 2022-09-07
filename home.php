@@ -15,6 +15,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="css/style.css">
+	  <link rel="icon" type="image/x-icon" href="/images2/sigma_favicon.png">
       <title>Home</title>
    </head>
    <body>
@@ -25,14 +26,8 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = float:right>
-				
-				<center>
-						
-					<p>logo</p>
-					
-				</center>
-				
+			 <div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
 			 </div>
 			 
 			 <div class = "admin_nav" style = float:right>
@@ -56,20 +51,15 @@
             </div>
  
          </div>
-         <div class = "main_content">
-            
+         <div class = "main_content" style = "background-image: url('images2/homepagebackground3.jpg'); background-size: 100vw 50vw; background-position: 0vw" alt="homepagebackground3">
+			 
 			 <div class = "title1">
-               <br>
-				 <b>
-                  <center>
-					  <h1>Welcome</h1>
-                  </center>
+				<b>
+					  <h1 style = "color: white; padding-left: 45.5vw;">Welcome</h1>
                </b>
 				 
-				<b>
-                  <center>
-                     <p>See new releases here</p>
-                  </center>
+				<b> 
+                     <p style = "color: white; padding-left: 42vw;">See Graeme's playlists here:</p>
                </b>
 				 
             </div>
@@ -77,26 +67,32 @@
             <!--Content Boxes-->
 			 
             <div class = "content_2">
+			
+				<a href = "query1.php"><img src="images2/imagebox1_image2.jpg" alt="imagebox1_image2" class="image" style=border-radius:5px;></a>
 				
-               <center>
-                  <p>image box 1</p>
-               </center>
+				<div class="middle">
+						<div class ="text">Query1</div>
+				</div>
 				
             </div>
 			 
             <div class = "content_3">
 				
-               <center>
-                  <p>image box 2</p>
-               </center>
+               <a href = "library.php"><img src="images/imagebox3_image1.jpg" alt="imagebox3_image1" class="image" style=border-radius:5px;></a>
+				
+				<div class="middle">
+					<div class="text">Library</div>
+				</div>
 				
             </div>
 			 
             <div class = "content_4">
 				
-               <center>
-                  <p>image box 3</p>
-               </center>
+               <a href = "query2.php"><img src="images/imagebox2_image1.jpg" alt="imagebox2_image1" class="image" style=border-radius:5px;></a>
+				
+				<div class="middle">
+					<div class="text">Query2</div>
+				</div>
 				
             </div>
 			 

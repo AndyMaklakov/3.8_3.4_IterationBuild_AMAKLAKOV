@@ -9,12 +9,13 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html style = "background-image: url('images2/insert-delete-update_image1.jpg'); background-position: 0vw; background-size: 100vw; 50vw;" alt=" insert-delete-update_image1">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="css/style.css">
+	  <link rel="icon" type="image/x-icon" href="/images/sigma_favicon.ico">
       <title>Delete User</title>
    </head>
    <body>
@@ -25,15 +26,9 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = float:right>
-				
-					<center>
-						
-						<p>logo</p>
-					
-					</center>
-				
-			 	</div>
+			 <div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
+			 </div>
 				
 				<div class = "admin_nav" style = float:right;>
 				
@@ -69,13 +64,11 @@
 					  
 						 <div class="column2">
 
-							<center><br><br><br>
-							   <p>Delete User</p>
-							</center>
+							<img src="images/delete-icon2.jpg" alt="delete-icon" class="img" style="padding-left:7.5vw;width:6vw;height:6vw;">
 
 							<br><br>
 							<center>
-							   <p>Insert the user details you want to delete here:</p>
+							   <p>DELETE USER</p>
 							</center>
 
 						 </div>

@@ -26,12 +26,13 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html style = "background-image: url('images2/loginpageimage1.jpg'); background-position: 0vw; background-size: 100vw; 50vw;" alt="loginpageimage1">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="css/style.css">
+	  <link rel="icon" type="image/x-icon" href="/images2/sigma_favicon.ico">
       <title>Login</title>
    </head>
    <body>
@@ -42,14 +43,8 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = float:right>
-				
-				<center>
-						
-					<p>logo</p>
-					
-				</center>
-				
+			 <div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
 			 </div>
 			 
             <div class="hamburger-menu">
@@ -73,21 +68,19 @@
 					  
                      <div class="column">
                      </div>
-					  
-						 <div class="column2">
 							
-							<center><br><br><br>
-							   <p>login box</p>
-							</center>
+						<div class="column2">
+
+							   <img src="images2/login-icon2.jpg" alt="login-icon" class="img" style="padding-left:7.5vw;width:6vw;height:6vw;">
 
 							<br><br>
 							<center>
-							   <p>please enter your login details:</p>
+							   <p>USER LOGIN</p>
 							</center>
 
-						 </div>
+						</div>
 					  
-                  </div>
+				</div>
 			 
             <br>
 			 
@@ -152,7 +145,7 @@
 				Admin: Graeme - Contact Graeme for inserting, deleting or updating a user</p>
 				
 			</div>
-		  
+		  </div>
       </div>
    </body>
 </html>
