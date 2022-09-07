@@ -29,8 +29,9 @@
 			
 			<div class = "nav">
 				
-				<div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
-			 	</div>
+				<div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
+			 </div>
 				
 				<div class = "admin_nav" style = float:right>
 				
