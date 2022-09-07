@@ -26,7 +26,8 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
+			 <div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
 			 </div>
 				
 				<div class = "admin_nav" style = float:right;>
@@ -63,7 +64,7 @@
 					  
 						 <div class="column2">
 
-							   <img src="images/update-icon.jpg" alt="update-icon" class="img" style="padding-left:7.5vw;width:6vw;height:6vw;">
+							   <img src="images/update-icon2.jpg" alt="update-icon" class="img" style="padding-left:7.5vw;width:6vw;height:6vw;">
 
 							<br><br>
 							<center>
