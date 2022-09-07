@@ -26,7 +26,8 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
+			 <div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
 			 </div>
 			 
 			 <div class = "admin_nav" style = float:right>
@@ -66,20 +67,32 @@
             <!--Content Boxes-->
 			 
             <div class = "content_2">
+			
+				<a href = "query1.php"><img src="images2/imagebox1_image2.jpg" alt="imagebox1_image2" class="image" style=border-radius:5px;></a>
 				
-               <a href = "query1.php"><img src="images2/imagebox1_image2.jpg" alt="imagebox1_image1" class="img" style=border-radius:5px;></a>
+				<div class="middle">
+						<div class ="text">Query1</div>
+				</div>
 				
             </div>
 			 
             <div class = "content_3">
 				
-               <a href = "library.php"><img src="images2/imagebox2_image1.jpg" alt="imagebox1_image2" class="img" style=border-radius:5px;></a>
+               <a href = "library.php"><img src="images/imagebox3_image1.jpg" alt="imagebox3_image1" class="image" style=border-radius:5px;></a>
+				
+				<div class="middle">
+					<div class="text">Library</div>
+				</div>
 				
             </div>
 			 
             <div class = "content_4">
 				
-               <a href = "query2.php"><img src="images2/imagebox2_image2.jpg" alt="imagebox1_image3" class="img" style=border-radius:5px;></a>
+               <a href = "query2.php"><img src="images/imagebox2_image1.jpg" alt="imagebox2_image1" class="image" style=border-radius:5px;></a>
+				
+				<div class="middle">
+					<div class="text">Query2</div>
+				</div>
 				
             </div>
 			 
