@@ -26,7 +26,7 @@
 ?>
 
 <!DOCTYPE html>
-<html style = "background-image: url('images/loginpageimage1.jpg'); background-position: 0vw; background-size: 100vw; 50vw;" alt="loginpageimage1">
+<html style = "background-image: url('images2/loginpageimage1.jpg'); background-position: 0vw; background-size: 100vw; 50vw;" alt="loginpageimage1">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,8 @@
 		  
          <div class = "nav">
 			 
-			 <div class = "logo" style = "background-image: url('images2/sigmalogowhite.jpg'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogowhite">
+			 <div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
 			 </div>
 			 
             <div class="hamburger-menu">
