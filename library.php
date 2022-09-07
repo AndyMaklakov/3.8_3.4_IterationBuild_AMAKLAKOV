@@ -29,8 +29,9 @@
 			
 			<div class = "nav">
 				
-				<div class = "logo" style = "background-image: url('images2/sigmalogoblack.png'); background-size: 4vw 4vw; background-position: 0vw;" alt="sigmalogoblack">
-			 	</div>
+				<div class = "logo">
+				 <a href = "home.php"><img src="images2/sigmalogofinal.png" alt="sigmalogofinal" class="img_logo" style=padding-bottom:1vw;></a>
+			 </div>
 				
 				<div class = "admin_nav" style = float:right>
 				
@@ -68,8 +69,8 @@
 				<div class = "title2" style = "background-image: url('images2/librarybannerimage2.jpg'); background-size: 100vw 48.614vw; background-position: 0vw;" alt="librarybannerimage1">
 					<center>
 
-							<h1>Library</h1>
-							<p>Graeme's playlist</p>
+							<h1 style = "color: white;">Library</h1>
+							<p style = "color: white;">Graeme's playlist</p>
 					</center>
 
 				
