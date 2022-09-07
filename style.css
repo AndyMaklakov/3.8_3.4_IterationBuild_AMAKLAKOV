@@ -50,13 +50,19 @@ p {
 }
 
 .logo{	/*Box for the logo on the navigation bar*/
-	margin-right: 3vw;
+	margin-right: 2vw;
 	text-align: right;
 	font-size: 5vw;
 	float: right;
-	width: 4vw;
+	width: 5vw;
 	height: 4vw;
 	background-color:;
+}
+
+.logo:hover{	/*Hover for the logo box*/
+	transform:scale(1.2);
+	transition: 1s;
+	z-index: 2;
 }
 
 .query_nav{	/*Style for the query links and settings link that also contains some of the hover elements*/
@@ -82,7 +88,7 @@ p {
 /*Hover elements*/
 .query_nav:before {
 	content: '';
-	background: ;
+	background:;
 	display: inline;
 	position: absolute;
 	bottom: -3px;
@@ -216,13 +222,6 @@ p {
 	background: #555;
 }
 
-/*-----------Images/Graphics----------------*/
-
-.img { /*Will use later for images/graphics stage*/
-	width: 100%;
- 	height: auto;
-}
-
 /*-------------Content Boxes----------------*/
 
 .main_content{	/*Large elements are stored here*/
@@ -263,21 +262,16 @@ p {
 .content_2{	/*Image box on the left of home page*/
 	box-sizing: border-box;
 	background-color: #f7f7f7;
-	background: rgba(204, 204, 204, 0.7);
+	box-shadow: 2px 2px 5px black;
 	border-radius: 5px;
 	grid-column: 2;
 	grid-row: 2;
 }
 
-.content_2:hover{	/*Hover for the image box*/
-	transition:transform 0.3s ease-out;
-
-}
-
 .content_3{	/*Image box on the centre of home page*/
 	box-sizing: border-box;
 	background-color: #f7f7f7;
-	background: rgba(204, 204, 204, 0.7);
+	box-shadow: 2px 2px 5px black;
 	border-radius: 5px;
 	grid-column: 4;
 	grid-row: 2;
@@ -286,7 +280,7 @@ p {
 .content_4{	/*Image box on the right of home page*/
 	box-sizing: border-box;
 	background-color: #f7f7f7;
-	background: rgba(204, 204, 204, 0.7);
+	box-shadow: 2px 2px 5px black;
 	border-radius: 5px;
 	grid-column: 6;
 	grid-row: 2;
@@ -298,6 +292,75 @@ p {
 	background: #4B4E4E;
 }
 
+/*-----------Images/Graphics----------------*/
+
+.img_logo { /*Using for the logo so it animates seperatly from the other images*/
+	display: block;
+	width: 100%;
+}
+
+/*---------------IMAGE HOVER STYLE---------------*/
+
+.image {	/*For the images on the home page*/
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transform: 1.1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle {	/*For the text when the image is hovered over*/
+	transition: .5s ease;
+	opacity: 0;
+	position: relative;
+	bottom: 4vw;
+	left: 10vw;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.content_2:hover .image {	/*Allows the box to be hovered over*/
+	opacity: 1;
+	transform:scale(1.1);
+}
+
+.content_2:hover .middle {	/*Allows the text to be shown when hovered over*/
+	opacity: 1;
+}
+
+.content_3:hover .image {	/*Allows the box to be hovered over*/
+	opacity: 1;
+	transform:scale(1.1);
+}
+
+.content_3:hover .middle {	/*Allows the text to be shown when hovered over*/
+	opacity: 1;
+}
+
+.content_4:hover .image {	/*Allows the box to be hovered over*/
+	opacity: 1;
+	transform:scale(1.1);
+}
+
+.content_4:hover .middle {	/*Allows the text to be shown when hovered over*/
+	opacity: 1;
+}
+
+.text_box {	/*Text for the hover when box is hovered over*/
+	background-color:;
+	height: 8vw;
+	border-radius: 5px;
+}
+
+.text {	/*Text for the hover when box is hovered over*/
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 2vw;
+	padding: 2.5vw 1.67vw;
+}
 /*---------------CONTACT FORM --------------*/
 
 input[type=text], select, textarea{	/*Input boxes where users can enter text*/
@@ -336,6 +399,7 @@ input[type=submit]:hover{	/*Hover for button*/
 .contact_content{	/*Box where all login/insert/delete/update user content is stored */
 	box-sizing: border-box;
 	background-color: #83C5BE;
+	box-shadow: 2px 2px 5px black;
 	margin-top: 3.5vw;
 	margin-left: 12vw;
 	padding-left: 2vw;
